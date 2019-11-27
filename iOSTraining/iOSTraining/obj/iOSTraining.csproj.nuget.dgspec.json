@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/successive4/Downloads/iOSTraining/iOSTraining/iOSTraining.csproj": {}
+  },
+  "projects": {
+    "/Users/successive4/Downloads/iOSTraining/iOSTraining/iOSTraining.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/successive4/Downloads/iOSTraining/iOSTraining/iOSTraining.csproj",
+        "projectName": "iOSTraining",
+        "projectPath": "/Users/successive4/Downloads/iOSTraining/iOSTraining/iOSTraining.csproj",
+        "packagesPath": "/Users/successive4/.nuget/packages/",
+        "outputPath": "/Users/successive4/Downloads/iOSTraining/iOSTraining/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/successive4/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[4.0.1.5, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

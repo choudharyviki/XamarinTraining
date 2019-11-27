@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{60AC8108-D8D2-4777-BD78-DE9AE34341EE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOSTraining/Main.storyboard">
+    <Files>
+      <File FileName="iOSTraining/Main.storyboard" />
+      <File FileName="iOSTraining/WorkOrderMainControllerview.cs" />
+      <File FileName="iOSTraining/Cell/AssigneCell.cs" />
+      <File FileName="iOSTraining/secondviewcontroller.cs" />
+      <File FileName="iOSTraining/Addworkorderviewcontroller.cs" />
+      <File FileName="iOSTraining/GalleryControllerview.cs" />
+      <File FileName="iOSTraining/Model/PeopleModel.cs" />
+      <File FileName="iOSTraining/ButtonController.cs" />
+      <File FileName="iOSTraining/PickerDelegate.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="iOSTraining" expanded="True">
+            <Node name="iOSTraining" expanded="True">
+              <Node name="Cell" expanded="True" />
+              <Node name="Model" expanded="True" />
+              <Node name="Source" expanded="True" />
+              <Node name="Main.storyboard" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../iOSTraining/secondviewcontroller.cs" line="42" offsetX="-1" offsetY="-1" expression="e" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Catchpoint exceptionName="System.Exception" includeSubclasses="True" />
+      <Breakpoint file="/Users/successive4/Downloads/iOSTraining/iOSTraining/Source/MyTableviewSource.cs" relfile="iOSTraining/Source/MyTableviewSource.cs" line="16" column="1" />
+      <Breakpoint file="/Users/successive4/Downloads/iOSTraining/iOSTraining/Source/MyTableviewSource.cs" relfile="iOSTraining/Source/MyTableviewSource.cs" line="28" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.iOSTraining automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A624F458-0AAB-47C5-ADF2-8A8FB57B8C51" />
+</Properties>

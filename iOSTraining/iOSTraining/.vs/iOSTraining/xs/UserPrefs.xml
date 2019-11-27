@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{60AC8108-D8D2-4777-BD78-DE9AE34341EE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Main.storyboard">
+    <Files>
+      <File FileName="Main.storyboard" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="iOSTraining" expanded="True">
+            <Node name="iOSTraining" expanded="True">
+              <Node name="Main.storyboard" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../secondviewcontroller.cs" line="42" offsetX="-1" offsetY="-1" expression="e" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.iOSTraining PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.72DC7B13-6635-4BFA-A1FA-5A03B1D4B646" />
+</Properties>
