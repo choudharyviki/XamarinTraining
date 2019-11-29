@@ -1587,7 +1587,7 @@
                                 <color key="textColor" colorSpace="custom" customColorSpace="sRGB" red="0.905582091968912" green="0.151599109572467" blue="0.148520419578307" alpha="1"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="469690" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Facility*">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="469690" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Facility*" tag="101">
                                 <rect key="frame" x="61" y="359" width="69.5" height="24"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -1607,7 +1607,7 @@
                                 <color key="textColor" colorSpace="custom" customColorSpace="sRGB" red="0.925335977979275" green="0.177979164012302" blue="0.147211073396375" alpha="1"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="471519" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Unit*">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="471519" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Unit*" tag="102">
                                 <rect key="frame" x="61" y="477" width="44.5" height="24"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -1627,7 +1627,7 @@
                                 <color key="textColor" colorSpace="custom" customColorSpace="sRGB" red="0.919021211139896" green="0.222518561791656" blue="0.238185250840123" alpha="1"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="471873" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Assigne To*">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" id="471873" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Assigne To*" tag="103">
                                 <rect key="frame" x="61" y="587" width="103" height="24"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -1709,6 +1709,13 @@
                         <outlet property="TitleValidation" destination="466267" id="name-outlet-466267"/>
                         <outlet property="Descriptionvalidation" destination="466724" id="name-outlet-466724"/>
                         <outlet property="Faclitytextbox" destination="469690" id="name-outlet-469690"/>
+                        <outlet property="TitleTextBox" destination="460703" id="name-outlet-460703"/>
+                        <outlet property="Descriptiontextbox" destination="466478" id="name-outlet-466478"/>
+                        <outlet property="Unittextbox" destination="471519" id="name-outlet-471519"/>
+                        <outlet property="Assigntextbox" destination="471873" id="name-outlet-471873"/>
+                        <outlet property="Faclityvalidation" destination="469964" id="name-outlet-469964"/>
+                        <outlet property="UnitValidation" destination="471709" id="name-outlet-471709"/>
+                        <outlet property="Assignvalidation" destination="472133" id="name-outlet-472133"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="434266" userLabel="First Responder" sceneMemberID="firstResponder"/>

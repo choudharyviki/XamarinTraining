@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using CoreGraphics;
 using iOSTraining.Model;
 using UIKit;
+//using UIKit;
 
 namespace iOSTraining
 {
@@ -9,7 +11,18 @@ namespace iOSTraining
     {
         UIPickerView pickerName;
         private int changevalueofpicker;
+        private UITextField tf;
         UIView notificationView;
+        PeopleModel personModel;
+        UIToolbar toolbar;
+        string selectname;
+        string selectWork;
+        string selcetHobbies;
+        bool pickerscroll=false;
+        List<string> nameOfEmployee = new List<string>();
+        List<string> workOfEmployee = new List<string>();
+        List<string> hobbiesOfEmployee = new List<string>();
+
         public Addworkorderviewcontroller() : base("Addworkorderviewcontroller", null)
         {
         }
@@ -17,28 +30,148 @@ namespace iOSTraining
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            nameOfEmployee.Add("Amy Burn");
+            nameOfEmployee.Add("Kevin Mullians");
+            nameOfEmployee.Add("craige Dunn");
+            nameOfEmployee.Add("daivd Burn");
+            nameOfEmployee.Add("mark Burn");
+            nameOfEmployee.Add("Tom Burn");
+
+            workOfEmployee.Add("Teacher");
+            workOfEmployee.Add("Manager");
+            workOfEmployee.Add("Engineer");
+            workOfEmployee.Add("Farmer");
+            workOfEmployee.Add("Business");
+            workOfEmployee.Add("Inspector");
+
+            hobbiesOfEmployee.Add("Cricket");
+            hobbiesOfEmployee.Add("Football");
+            hobbiesOfEmployee.Add("Hockey");
+            hobbiesOfEmployee.Add("Sketching");
+            hobbiesOfEmployee.Add("Painter");
+            hobbiesOfEmployee.Add("Cooking");
+
+            TitleValidation.Hidden = true;
+            Descriptionvalidation.Hidden = true;
+            Faclityvalidation.Hidden = true;
+            UnitValidation.Hidden = true;
+            Assignvalidation.Hidden = true;
             cancelbutton.Layer.BorderColor = UIColor.Blue.CGColor;
             cancelbutton.Layer.BorderWidth = 1;
             cancelbutton.Layer.CornerRadius = 15;
             Faclitytextbox.EditingDidBegin += CallFacilityDropDown;
+            
+            UITapGestureRecognizer tapGesture = new UITapGestureRecognizer(Tap);
+            tapGesture.NumberOfTapsRequired = 1;
+            View.AddGestureRecognizer(tapGesture);
+
+            pickerName = new UIPickerView(new CGRect(UIScreen.MainScreen.Bounds.X - UIScreen.MainScreen.Bounds.Width,
+           UIScreen.MainScreen.Bounds.Height - 230, UIScreen.MainScreen.Bounds.Width, 180));
+           // personModel = new PeopleModel();
+           // pickerName.Model = personModel;
+           // personModel.Valuechange += CallWhenValueChange;
+
+             toolbar = new UIToolbar(new CGRect(0, 0, 320, 44));
+            UIBarButtonItem flexiblespaceleft = new UIBarButtonItem(UIBarButtonSystemItem.FlexibleSpace, null, null);
+            UIBarButtonItem donebutton = new UIBarButtonItem("Done", UIBarButtonItemStyle.Done, this, new ObjCRuntime.Selector("DoneAction"));
+            donebutton.Clicked += DoneAction;
+            UIBarButtonItem[] list = new UIBarButtonItem[] { flexiblespaceleft,donebutton  };
+            toolbar.SetItems(list,false);
+            Faclitytextbox.InputAccessoryView = toolbar;
+            Unittextbox.InputAccessoryView = toolbar;
+            Unittextbox.EditingDidBegin += CallFacilityDropDown;
+            Assigntextbox.InputAccessoryView = toolbar;
+            Assigntextbox.EditingDidBegin += CallFacilityDropDown;
 
             // Perform any additional setup after loading the view, typically from a nib.
         }
 
+        
+
+        private void DoneAction(object s ,EventArgs e)
+
+        {
+            if (!pickerscroll)
+                {
+                tf.Text = personModel.DefaultPickerValue();
+                tf.ResignFirstResponder();
+                }
+                else
+                {
+                tf.Text = selectname;
+                tf.ResignFirstResponder();
+
+                }
+        }
+
+        private void CallWhenValueChange(object sender, EventArgs e)
+        {
+            pickerscroll = true;
+           selectname= personModel.Selectedvalue; 
+        }
+
+        private void Tap()
+        {
+           
+            if (string.IsNullOrWhiteSpace(TitleTextBox.Text))
+            {
+                TitleValidation.Hidden = false;
+            }
+            else
+                TitleValidation.Hidden = true;
+
+
+            if (string.IsNullOrWhiteSpace(Descriptiontextbox.Text))
+            {
+                Descriptionvalidation.Hidden = false;
+            }
+            else
+                Descriptionvalidation.Hidden = true;
+            if (string.IsNullOrWhiteSpace(Faclitytextbox.Text))
+            {
+                Faclityvalidation.Hidden = false;
+            }
+            else
+                Faclityvalidation.Hidden = true;
+            if (string.IsNullOrWhiteSpace(Unittextbox.Text))
+            {
+                UnitValidation.Hidden = false;
+            }
+            else
+                UnitValidation.Hidden = true;
+
+            if (string.IsNullOrWhiteSpace(Assigntextbox.Text))
+            {
+                Assignvalidation.Hidden = false;
+            }
+            else
+                Assignvalidation.Hidden = true;
+
+
+        }
+
         private void CallFacilityDropDown(object sender, EventArgs e)
         {
-            pickerName = new UIPickerView(new CGRect(UIScreen.MainScreen.Bounds.X - UIScreen.MainScreen.Bounds.Width,
-              UIScreen.MainScreen.Bounds.Height - 230, UIScreen.MainScreen.Bounds.Width, 180));
-            var personModel = new PeopleModel();
+             tf = (UITextField)sender;
+            List<string> list;
+            if(tf.Tag==101)
+            {
+                list = nameOfEmployee;
+            }
+            else if(tf.Tag == 102)
+            {
+                list = workOfEmployee;
+            }
+            else
+            {
+                list = hobbiesOfEmployee;
+            }
+            personModel = new PeopleModel(list);
             pickerName.Model = personModel;
-            Faclitytextbox.Text= pickerName.SelectedRowInComponent(0).ToString();
-            pickerName.TranslatesAutoresizingMaskIntoConstraints = false;
-            View.Add(pickerName);
-            NSLayoutConstraint.Create(pickerName, NSLayoutAttribute.Leading, NSLayoutRelation.Equal, View, NSLayoutAttribute.Leading, 1.0f, -50).Active = true;
-            NSLayoutConstraint.Create(pickerName, NSLayoutAttribute.Top, NSLayoutRelation.Equal, Faclitytextbox, NSLayoutAttribute.Top, 1.0f, -70).Active = true;
-            // NSLayoutConstraint.Create(pickerName, NSLayoutAttribute.Height, NSLayoutRelation.Equal, multiplier: 1, constant: 40).Active = true;
-            //  NSLayoutConstraint.Create(pickerName, NSLayoutAttribute.Width, NSLayoutRelation.Equal, multiplier: 1, constant: 90).Active = true;
+            personModel.Valuechange += CallWhenValueChange;
 
+            tf.InputView = pickerName;
+         
         }
         public Addworkorderviewcontroller(IntPtr handle) : base(handle)
         {

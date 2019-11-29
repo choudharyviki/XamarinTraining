@@ -28,8 +28,8 @@ namespace iOSTraining
 
             searchBar.Placeholder = "Enter your search item...";
             NavigationItem.TitleView = searchBar;
-            var personModel = new PeopleModel();
-            picker.Model = personModel;
+           // var personModel = new PeopleModel();
+            //picker.Model = personModel;
             // Perform any additional setup after loading the view, typically from a nib.
         }
 

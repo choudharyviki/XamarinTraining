@@ -2,10 +2,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="iOSTraining/Main.storyboard">
     <Files>
       <File FileName="iOSTraining/Main.storyboard" />
+      <File FileName="iOSTraining/Addworkorderviewcontroller.cs" />
       <File FileName="iOSTraining/WorkOrderMainControllerview.cs" />
       <File FileName="iOSTraining/Cell/AssigneCell.cs" />
       <File FileName="iOSTraining/secondviewcontroller.cs" />
-      <File FileName="iOSTraining/Addworkorderviewcontroller.cs" />
       <File FileName="iOSTraining/GalleryControllerview.cs" />
       <File FileName="iOSTraining/Model/PeopleModel.cs" />
       <File FileName="iOSTraining/ButtonController.cs" />
@@ -16,10 +16,8 @@
         <State name="__root__">
           <Node name="iOSTraining" expanded="True">
             <Node name="iOSTraining" expanded="True">
-              <Node name="Cell" expanded="True" />
+              <Node name="Packages" selected="True" />
               <Node name="Model" expanded="True" />
-              <Node name="Source" expanded="True" />
-              <Node name="Main.storyboard" selected="True" />
             </Node>
           </Node>
         </State>
@@ -32,11 +30,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Catchpoint exceptionName="System.Exception" includeSubclasses="True" />
-      <Breakpoint file="/Users/successive4/Downloads/iOSTraining/iOSTraining/Source/MyTableviewSource.cs" relfile="iOSTraining/Source/MyTableviewSource.cs" line="16" column="1" />
-      <Breakpoint file="/Users/successive4/Downloads/iOSTraining/iOSTraining/Source/MyTableviewSource.cs" relfile="iOSTraining/Source/MyTableviewSource.cs" line="28" column="1" />
+      <Catchpoint enabled="false" exceptionName="System.Exception" includeSubclasses="True" />
+      <Breakpoint enabled="false" file="/Users/successive2/Downloads/VikramIosTraining/iOSTraining/iOSTraining/Source/MyTableviewSource.cs" relfile="iOSTraining/Source/MyTableviewSource.cs" line="16" column="1" />
+      <Breakpoint enabled="false" file="/Users/successive2/Downloads/VikramIosTraining/iOSTraining/iOSTraining/Source/MyTableviewSource.cs" relfile="iOSTraining/Source/MyTableviewSource.cs" line="28" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.iOSTraining automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A624F458-0AAB-47C5-ADF2-8A8FB57B8C51" />
+  <MonoDevelop.Ide.ItemProperties.iOSTraining automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.12C840D0-F194-45F1-B7A8-7D5182301FA2" />
 </Properties>

@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/successive4/Downloads/iOSTraining/iOSTraining/iOSTraining.csproj": {}
+    "/Users/successive2/Downloads/VikramIosTraining/iOSTraining/iOSTraining/iOSTraining.csproj": {}
   },
   "projects": {
-    "/Users/successive4/Downloads/iOSTraining/iOSTraining/iOSTraining.csproj": {
+    "/Users/successive2/Downloads/VikramIosTraining/iOSTraining/iOSTraining/iOSTraining.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/successive4/Downloads/iOSTraining/iOSTraining/iOSTraining.csproj",
+        "projectUniqueName": "/Users/successive2/Downloads/VikramIosTraining/iOSTraining/iOSTraining/iOSTraining.csproj",
         "projectName": "iOSTraining",
-        "projectPath": "/Users/successive4/Downloads/iOSTraining/iOSTraining/iOSTraining.csproj",
-        "packagesPath": "/Users/successive4/.nuget/packages/",
-        "outputPath": "/Users/successive4/Downloads/iOSTraining/iOSTraining/obj/",
+        "projectPath": "/Users/successive2/Downloads/VikramIosTraining/iOSTraining/iOSTraining/iOSTraining.csproj",
+        "packagesPath": "/Users/successive2/.nuget/packages/",
+        "outputPath": "/Users/successive2/Downloads/VikramIosTraining/iOSTraining/iOSTraining/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "/Users/successive4/.config/NuGet/NuGet.Config"
+          "/Users/successive2/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"

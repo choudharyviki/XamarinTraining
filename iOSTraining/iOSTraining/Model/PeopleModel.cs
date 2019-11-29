@@ -7,20 +7,28 @@ namespace iOSTraining.Model
     public class PeopleModel:UIPickerViewModel
     {
         int index = 0;
-        public List<string> nameOfPeople = new List<string>();
+        public EventHandler Valuechange;
+        public string Selectedvalue;
+
+        public List<string> nameOfPeople;
        
-        public PeopleModel()
+        public PeopleModel(List<string> nameOfPeople)
         {
-            nameOfPeople.Add("Amy Burn");
-            nameOfPeople.Add("Kevin Mullians");
-            nameOfPeople.Add("craige Dunn");
-            nameOfPeople.Add("daivd Burn");
-            nameOfPeople.Add("mark Burn");
-            nameOfPeople.Add("Tom Burn");
+            this.nameOfPeople = nameOfPeople;
+            //nameOfPeople.Add("Amy Burn");
+            //nameOfPeople.Add("Kevin Mullians");
+            //nameOfPeople.Add("craige Dunn");
+            //nameOfPeople.Add("daivd Burn");
+            //nameOfPeople.Add("mark Burn");
+            //nameOfPeople.Add("Tom Burn");
 
             
         }
-        
+        public  string DefaultPickerValue()
+        {
+            return nameOfPeople[0].ToString();
+        }
+
         public override nint GetComponentCount(UIPickerView pickerView)
         {
             return 1;
@@ -36,7 +44,10 @@ namespace iOSTraining.Model
         public override void Selected(UIPickerView pickerView, nint row, nint component)
         {
             //base.Selected(pickerView, row, component);
-            index = (int)row;
+            var nameofpeople = nameOfPeople[(int)row];
+            Selectedvalue = nameofpeople;
+            Valuechange?.Invoke(null, null);
+            
         }
     }
 }
