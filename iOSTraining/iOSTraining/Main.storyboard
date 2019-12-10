@@ -181,6 +181,14 @@
                                     <action selector="UIButton434458_TouchUpInside:" destination="819" id="434690" eventType="touchUpInside"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="481617" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="170" y="241" width="123" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="facebooklogin"/>
+                                <connections>
+                                    <action selector="UIButton481617_TouchUpInside:" destination="819" id="482234" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint id="80410" firstItem="823" firstAttribute="top" secondItem="816" secondAttribute="bottom" constant="184"/>
@@ -199,6 +207,7 @@
                         <segue id="319289" destination="319237" kind="show" identifier="workphotosegue"/>
                         <segue id="371941" destination="371303" kind="show" identifier="Workordermainsegue"/>
                         <segue id="434449" destination="434264" kind="show" identifier="Addwrokordersegue"/>
+                        <segue id="482232" destination="480963" kind="show" identifier="facebooksegue"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="821" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1660,7 +1669,12 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="473738" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="158" y="695.5" width="46" height="30"/>
-                                <state key="normal" title="Create"/>
+                                <state key="normal" title="Create">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
+                                </state>
+                                <connections>
+                                    <action selector="UIButton473738_TouchUpInside:" destination="434264" id="478187" eventType="touchUpInside"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -1722,6 +1736,94 @@
             </objects>
             <point key="canvasLocation" x="-854" y="155"/>
         </scene>
+        <scene sceneID="480962">
+            <objects>
+                <viewController id="480963" sceneMemberID="viewController" customClass="FacebookVIewCOntroller">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="480960"/>
+                        <viewControllerLayoutGuide type="bottom" id="480961"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="480964">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="481588" translatesAutoresizingMaskIntoConstraints="NO" text="Xamarin iOS Auth">
+                                <rect key="frame" x="63" y="65" width="271" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="481591" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="43" y="148" width="333" height="189"/>
+                                <constraints>
+                                    <constraint id="481594" firstAttribute="width" constant="333"/>
+                                    <constraint id="481595" firstAttribute="height" constant="189"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="481596" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="124" y="368" width="172" height="169"/>
+                                <constraints>
+                                    <constraint id="481599" firstAttribute="width" constant="172"/>
+                                    <constraint id="481600" firstAttribute="height" constant="169"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="481601" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="72" y="557" width="297" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="481605" firstAttribute="width" constant="297"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="481602" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="51" y="608" width="325" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="481608" firstAttribute="width" constant="325"/>
+                                </constraints>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="481609" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="51" y="642.5" width="303" height="45"/>
+                                <state key="normal" title="Login With Facebook"/>
+                                <constraints>
+                                    <constraint id="481613" firstAttribute="width" constant="303"/>
+                                    <constraint id="481614" firstAttribute="height" constant="45"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="UIButton481609_TouchUpInside:" destination="480963" id="481616" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="481589" firstItem="481588" firstAttribute="leading" secondItem="480964" secondAttribute="leadingMargin" constant="43"/>
+                            <constraint id="481590" firstItem="481588" firstAttribute="top" secondItem="480960" secondAttribute="bottom" constant="45"/>
+                            <constraint id="481592" firstItem="481591" firstAttribute="leading" secondItem="480964" secondAttribute="leadingMargin" constant="23"/>
+                            <constraint id="481593" firstItem="481591" firstAttribute="top" secondItem="481588" secondAttribute="bottom" constant="42"/>
+                            <constraint id="481597" firstItem="481596" firstAttribute="leading" secondItem="480964" secondAttribute="leadingMargin" constant="104"/>
+                            <constraint id="481598" firstItem="481596" firstAttribute="top" secondItem="481591" secondAttribute="bottom" constant="31"/>
+                            <constraint id="481603" firstItem="481601" firstAttribute="leading" secondItem="480964" secondAttribute="leadingMargin" constant="52"/>
+                            <constraint id="481604" firstItem="481601" firstAttribute="top" secondItem="481596" secondAttribute="bottom" constant="20"/>
+                            <constraint id="481606" firstItem="481602" firstAttribute="leading" secondItem="480964" secondAttribute="leadingMargin" constant="31"/>
+                            <constraint id="481607" firstItem="481602" firstAttribute="top" secondItem="481601" secondAttribute="bottom" constant="24.5"/>
+                            <constraint id="481610" firstItem="481609" firstAttribute="leading" secondItem="480964" secondAttribute="leadingMargin" constant="31"/>
+                            <constraint id="481611" firstItem="481609" firstAttribute="top" secondItem="481602" secondAttribute="bottom" constant="8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Fcoverpageimage" destination="481591" id="name-outlet-481591"/>
+                        <outlet property="myprofileimage" destination="481596" id="name-outlet-481596"/>
+                        <outlet property="Nameofuser" destination="481601" id="name-outlet-481601"/>
+                        <outlet property="fbid" destination="481602" id="name-outlet-481602"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="480965" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1364" y="164"/>
+        </scene>
     </scenes>
     <resources>
         <image name="left-arrow.png" width="24" height="24"/>
@@ -1729,7 +1831,6 @@
         <image name="abc.jpg" width="5120" height="2880"/>
         <image name="masg.png" width="13" height="13"/>
         <image name="jeep.png" width="19" height="10"/>
-        <image name="hallarrow.png" width="12" height="19"/>
         <image name="notfi.png" width="13" height="13"/>
         <image name="hamberger.png" width="225" height="225"/>
         <image name="worklogo.png" width="358" height="141"/>

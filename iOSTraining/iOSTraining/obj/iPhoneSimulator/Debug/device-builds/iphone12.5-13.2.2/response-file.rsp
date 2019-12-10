@@ -1,5 +1,5 @@
---cache=/Users/successive2/Downloads/VikramIosTraining/iOSTraining/iOSTraining/obj/iPhoneSimulator/Debug/device-builds/iphone12.5-13.2.2/mtouch-cache
---sim=/Users/successive2/Downloads/VikramIosTraining/iOSTraining/iOSTraining/bin/iPhoneSimulator/Debug/device-builds/iphone12.5-13.2.2/iOSTraining.app
+--cache=/Users/successive4/Downloads/NewiOSTraining/iOSTraining/iOSTraining/obj/iPhoneSimulator/Debug/device-builds/iphone12.5-13.2.2/mtouch-cache
+--sim=/Users/successive4/Downloads/NewiOSTraining/iOSTraining/iOSTraining/bin/iPhoneSimulator/Debug/device-builds/iphone12.5-13.2.2/iOSTraining.app
 --executable=iOSTraining
  --debug
  --sgen-conc
@@ -10,12 +10,13 @@
  --aot-options=-O=-float32
  --http-message-handler=NSUrlSessionHandler
  --abi=x86_64
---symbollist=/Users/successive2/Downloads/VikramIosTraining/iOSTraining/iOSTraining/obj/iPhoneSimulator/Debug/device-builds/iphone12.5-13.2.2/mtouch-symbols.list
+--symbollist=/Users/successive4/Downloads/NewiOSTraining/iOSTraining/iOSTraining/obj/iPhoneSimulator/Debug/device-builds/iphone12.5-13.2.2/mtouch-symbols.list
  --dsym=no
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll
+-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Json.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.Vectors.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll
@@ -163,10 +164,11 @@
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XDocument.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XmlDocument.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll
--r=/Users/successive2/.nuget/packages/newtonsoft.json/12.0.3/lib/netstandard2.0/Newtonsoft.Json.dll
--r=/Users/successive2/.nuget/packages/plugin.permissions/3.0.0.12/lib/xamarinios10/Plugin.Permissions.dll
--r=/Users/successive2/.nuget/packages/xam.plugin.media/4.0.1.5/lib/xamarinios10/Plugin.Media.dll
--r=/Users/successive2/.nuget/packages/xamarin.essentials/1.1.0/lib/xamarinios10/Xamarin.Essentials.dll
+-r=/Users/successive4/.nuget/packages/newtonsoft.json/12.0.3/lib/netstandard2.0/Newtonsoft.Json.dll
+-r=/Users/successive4/.nuget/packages/plugin.permissions/3.0.0.12/lib/xamarinios10/Plugin.Permissions.dll
+-r=/Users/successive4/.nuget/packages/xam.plugin.media/4.0.1.5/lib/xamarinios10/Plugin.Media.dll
+-r=/Users/successive4/.nuget/packages/xamarin.auth/1.7.0/lib/Xamarin.iOS10/Xamarin.Auth.dll
+-r=/Users/successive4/.nuget/packages/xamarin.essentials/1.1.0/lib/xamarinios10/Xamarin.Essentials.dll
  --target-framework=Xamarin.iOS,v1.0
---root-assembly=/Users/successive2/Downloads/VikramIosTraining/iOSTraining/iOSTraining/bin/iPhoneSimulator/Debug/iOSTraining.exe
+--root-assembly=/Users/successive4/Downloads/NewiOSTraining/iOSTraining/iOSTraining/bin/iPhoneSimulator/Debug/iOSTraining.exe
  

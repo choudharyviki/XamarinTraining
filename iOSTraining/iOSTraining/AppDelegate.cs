@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using System.Threading;
+using Foundation;
 using UIKit;
 
 namespace iOSTraining
@@ -20,9 +21,10 @@ namespace iOSTraining
         {
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
+            int time = 3000;
+            Thread.Sleep(time);
 
-
-           var storyBoard = UIStoryboard.FromName("Main", null);
+            var storyBoard = UIStoryboard.FromName("Main", null);
            var controller = storyBoard.InstantiateViewController("Login") as ViewController;
            Window.RootViewController = new UINavigationController(controller);
            return true;

@@ -83,5 +83,10 @@ namespace iOSTraining
             PerformSegue("Addwrokordersegue", this);
            
         }
+
+        partial void UIButton481617_TouchUpInside(UIButton sender)
+        {
+            PerformSegue("facebooksegue", this); 
+        }
     }
 }

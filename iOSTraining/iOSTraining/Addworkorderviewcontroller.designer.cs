@@ -62,6 +62,10 @@ namespace iOSTraining
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void UIButton473730_TouchUpInside (UIKit.UIButton sender);
 
+        [Action ("UIButton473738_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void UIButton473738_TouchUpInside (UIKit.UIButton sender);
+
         void ReleaseDesignerOutlets ()
         {
             if (Assigntextbox != null) {
